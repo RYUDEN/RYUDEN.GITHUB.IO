@@ -13,6 +13,16 @@
             "meta": {}
         },
         {
+            "path": "/play",
+            "name": "play",
+            "meta": {}
+        },
+        {
+            "path": "/user",
+            "name": "user",
+            "meta": {}
+        },
+        {
             "path": "/error",
             "name": "error",
             "meta": {},
