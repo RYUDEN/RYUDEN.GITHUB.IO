@@ -3,6 +3,101 @@
     "base": "/",
     "routes": [
         {
+            "path": "/:city/detail/:id",
+            "name": "cityDetailId",
+            "meta": {}
+        },
+        {
+            "path": "/:city/error",
+            "name": "cityError",
+            "meta": {}
+        },
+        {
+            "path": "/:city/grade",
+            "name": "cityGrade",
+            "meta": {}
+        },
+        {
+            "path": "/:city/home",
+            "name": "cityHome",
+            "meta": {}
+        },
+        {
+            "path": "/:city",
+            "name": "city",
+            "meta": {}
+        },
+        {
+            "path": "/:city/login",
+            "name": "cityLogin",
+            "meta": {}
+        },
+        {
+            "path": "/:city/product",
+            "name": "cityProduct",
+            "meta": {}
+        },
+        {
+            "path": "/:city/search",
+            "name": "citySearch",
+            "meta": {}
+        },
+        {
+            "path": "/:city/shopping/account",
+            "name": "cityShoppingAccount",
+            "meta": {}
+        },
+        {
+            "path": "/:city/shopping",
+            "name": "cityShopping",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/address/edit",
+            "name": "cityUserAddressEdit",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/address",
+            "name": "cityUserAddress",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user",
+            "name": "cityUser",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/jifen",
+            "name": "cityUserJifen",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/msg",
+            "name": "cityUserMsg",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/order",
+            "name": "cityUserOrder",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/setting",
+            "name": "cityUserSetting",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/sign-up",
+            "name": "cityUserSignUp",
+            "meta": {}
+        },
+        {
+            "path": "/:city/user/star",
+            "name": "cityUserStar",
+            "meta": {}
+        },
+        {
             "path": "/appshell",
             "name": "appshell",
             "meta": {}
@@ -10,16 +105,6 @@
         {
             "path": "/",
             "name": "index",
-            "meta": {}
-        },
-        {
-            "path": "/play",
-            "name": "play",
-            "meta": {}
-        },
-        {
-            "path": "/user",
-            "name": "user",
             "meta": {}
         },
         {
