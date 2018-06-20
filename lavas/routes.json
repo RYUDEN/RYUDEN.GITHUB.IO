@@ -83,6 +83,11 @@
             "meta": {}
         },
         {
+            "path": "/:city/user/password",
+            "name": "cityUserPassword",
+            "meta": {}
+        },
+        {
             "path": "/:city/user/setting",
             "name": "cityUserSetting",
             "meta": {}
