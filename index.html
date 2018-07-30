@@ -16,6 +16,10 @@
     <link rel=preload href=/static/js/index.e126ab67.js as=script>
     <link rel=preload href=/static/css/index.c68c2712.css as=style
           onload="this.onload=null;this.rel='stylesheet';window.STYLE_READY=1;window.mountLavas&&window.mountLavas();">
+    <script type="text/javascript" src="/static/vconsole.min.js"></script>
+    <script type="text/javascript">
+        var vConsole = new VConsole();
+    </script>
     <script>!function (t) {
         "use strict";
         t.loadCSS || (t.loadCSS = function () {
@@ -90,7 +94,6 @@
 <script type=text/javascript src=/static/js/vue.353db202.js></script>
 <script type=text/javascript src=/static/js/vendor.a3f4c005.js></script>
 <script type=text/javascript src=/static/js/index.e126ab67.js></script>
-<script type="text/javascript" src="/static/vconsole.min.js"></script>
 <script>
     window.onload = function () {
         var script = document.createElement('script');
@@ -100,8 +103,6 @@
         script.src = '/sw-register.js?v=' + Date.now();
         firstScript.parentNode.insertBefore(script, firstScript);
     };
-    var vConsole = new VConsole();
-    console.log('Hello world');
 </script>
 </body>
 </html>
