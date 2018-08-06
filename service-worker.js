@@ -1,13 +1,13 @@
 importScripts('/static/js/workbox-sw.prod.v2.1.3.js');/**
  * @file service-worker.js with workbox api
  * @desc [example](https://workbox-samples.glitch.me/examples/workbox-sw/)
- * @author officemate(wiszx@qq.com)
+ * @author lithii(wiszx@Qq.com)
  */
 
 /* globals WorkboxSW */
 
 const workboxSW = new WorkboxSW({
-    cacheId: 'fft-cache',
+    cacheId: 'lavas-cache',
     ignoreUrlParametersMatching: [/^utm_/],
     skipWaiting: true,
     clientsClaim: true
@@ -17,10 +17,10 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([
   {
     "url": "/index.html",
-    "revision": "0cb493f2cd725ab6cbd3326925d65d25"
+    "revision": "e3030bdbe745a338f63a2d3944b6e379"
   },
   {
-    "url": "/static/css/index.c68c2712.css"
+    "url": "/static/css/index.d2e37040.css"
   },
   {
     "url": "/static/fonts/MaterialIcons-Regular.012cf6a1.woff"
@@ -29,16 +29,16 @@ workboxSW.precache([
     "url": "/static/fonts/MaterialIcons-Regular.a37b0c01.ttf"
   },
   {
-    "url": "/static/js/index.e126ab67.js"
+    "url": "/static/js/index.66bafb26.js"
   },
   {
     "url": "/static/js/manifest.7253881e.js"
   },
   {
-    "url": "/static/js/vendor.a3f4c005.js"
+    "url": "/static/js/vendor.51d0a121.js"
   },
   {
-    "url": "/static/js/vue.353db202.js"
+    "url": "/static/js/vue.0e0f6ce8.js"
   },
   {
     "url": "/static/js/workbox-sw.prod.v2.1.3.js",
@@ -51,8 +51,8 @@ workboxSW.router.registerNavigationRoute('/index.html');
 /**
  * example runningCache with api
  */
-workboxSW.router.registerRoute(/^http:\/\/mapi\.fufentong\.com\/sz\/api/,
-    workboxSW.strategies.networkFirst());
+// workboxSW.router.registerRoute(/^https:\/\/lavas\.baidu\.com\/some\/api/,
+//     workboxSW.strategies.networkFirst());
 
 
 /**
