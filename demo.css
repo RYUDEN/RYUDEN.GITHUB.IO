@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    line-height: 100vh;
+    text-align: center;
+    /* css线性渐变 */
+    background: linear-gradient(315deg,#01ffc8 0%,#027d8a, 20%,#0094d940, #6301ff 60%, #ff003c 80%, #fd7e00 100%);
+    background-size: 400%;
+    background-position: 0% 100%;
+    /* CSS3动画 */
+    animation: gradient 7.5s ease-in-out infinite;
+}
+@media only screen and (max-width: 500px){
+    img{
+        width: 100px;
+        vertical-align: middle;
+    }
+}
+@media only screen and (min-width: 501px){
+    img{
+        width: 300px;
+        vertical-align: middle;
+    }
+}
+img.rote{
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+/* 关键帧 */
+@keyframes gradient{
+  0%{
+    background-position: 0% 100%; 
+  }
+  50%{
+    background-position: 100% 0%;
+  }
+  100%{
+    background-position: 0% 100%;
+  }
+}
