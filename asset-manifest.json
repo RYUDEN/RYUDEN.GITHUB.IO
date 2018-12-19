@@ -1,18 +1,6 @@
 {
-  "main.js": "static/js/main.fee19b58.js",
-  "main.js.map": "static/js/main.fee19b58.js.map",
-  "static\\media\\PartFive.styl": "static/media/PartFive.e1dbac70.styl",
-  "static\\media\\PartFour.styl": "static/media/PartFour.3838618d.styl",
-  "static\\media\\PartFourCont.styl": "static/media/PartFourCont.9ff277b1.styl",
-  "static\\media\\PartOneBox.styl": "static/media/PartOneBox.b2d2bb1c.styl",
-  "static\\media\\PartOneIndex.styl": "static/media/PartOneIndex.60b58a1d.styl",
-  "static\\media\\PartThree.styl": "static/media/PartThree.d76584a3.styl",
-  "static\\media\\PartTwo.styl": "static/media/PartTwo.858e87a1.styl",
-  "static\\media\\PartTwoContainer.styl": "static/media/PartTwoContainer.5e41accf.styl",
-  "static\\media\\Timer.styl": "static/media/Timer.befc7531.styl",
-  "static\\media\\envelope.styl": "static/media/envelope.0e759463.styl",
-  "static\\media\\home.styl": "static/media/home.6ccff7c8.styl",
-  "static\\media\\partone.styl": "static/media/partone.5067f0b2.styl",
-  "static\\media\\public.styl": "static/media/public.60499bcd.styl",
-  "static\\media\\upshot.styl": "static/media/upshot.c07d16fa.styl"
+  "main.css": "static/css/main.304bda47.css",
+  "main.css.map": "static/css/main.304bda47.css.map",
+  "main.js": "static/js/main.12b3b520.js",
+  "main.js.map": "static/js/main.12b3b520.js.map"
 }
