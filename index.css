@@ -16,17 +16,81 @@ a{
     margin: 12px;
     border: 2px solid black;
 }
+#duration{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background-color: transparent;
+    z-index: 9;
+    width: 100%;
+    transition: 0.3s;
+    user-select: none;
+}
+#duration:hover{
+    height: 21px;
+    cursor: pointer;
+}
+#slider{
+    position: relative;
+    width: 0;
+    height: 100%;
+    background-color: #0084FF;
+}
+#duration:hover #time{
+    opacity: 1;
+}
+#time
+{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    color: white;
+    font-weight: bold;
+}
+.play-control{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    text-align: center;
+}
+.play-control img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.Top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 24px;
+}
+.Top img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 .head{
     padding-top:34px; 
 }
 .avatar{
+    width: 122px;
     text-align: center;
+    position: relative;
+    margin: 0 auto;
 }
 .avatar img{
     width: 122px;
     height: 122px;
     border: 1px solid #ccc;
     border-radius: 50%;
+}
+.avatar .play{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .head h1 {
     text-align: center;
@@ -91,6 +155,11 @@ a{
     position: relative;
     overflow: hidden;
     margin-bottom: 24px;
+    transition: 0.3s;
+}
+.item-img:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 0 0 10px 1px #666;
 }
 .item-img img{
     width: 100%;
@@ -134,4 +203,78 @@ a{
 }
 .item-info .time:hover{
     border-bottom: 1px solid black; 
+    transform: rotate(80deg);
+}
+.foot{
+    width:100%;
+    background-color: #333;
+    padding: 12px;
+}
+.base{
+    /* width: 100%; */
+    width:688px;
+    margin:0px auto;
+    height: 120px;
+    background-color: #333;
+    /* display: inline-block;
+    text-align: center; */
+}
+.base h3{
+    width: 688px;
+    color:#fff;
+    /* padding-left: 88px; */
+    font-size:20px;
+    /* margin: 0px; */
+    /* padding:0px; */
+    margin-bottom: 12px;
+    /* text-decoration: none; */
+    font-weight: lighter;
+    margin-top:3px;
+}
+.base p{
+    width: 688px;
+    height: 24px;
+    font-size: 14px;
+    color:#fff;
+    /* padding-left: 112px; */
+    margin: 0px;
+}
+.base p.link{
+    /* padding-left: 132px; */
+    margin: 13px 0px 0px 0px;
+}
+.link a{
+    color: #fff;
+}
+.nav2{
+    width: 688px;
+    margin: 0px auto 70px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 12px 0px;
+}
+.nav2 li{
+    display: inline-block;
+    /* margin: 30px; */
+    padding: 8px 0px;
+}
+/* https://www.runoob.com/css3/css3-2dtransforms.html  今天讲 2d变换
+前天有提到讲了一点 */
+.border{
+    float: right;
+}
+#float{
+    float: right;
+    border:1px solid black;
+    font-size:14px;
+    padding: 2px;
+    /* text-align: center; */
+    margin: 5px 0px 0px 0px;
+}
+
+
+#kekon
+{
+    display: none;
 }

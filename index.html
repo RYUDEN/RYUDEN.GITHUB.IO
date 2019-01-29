@@ -8,7 +8,28 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+    <audio 
+    id="kekon"
+    src="kekon.mp3"
+    title="结婚"
+    controls
+    loop
+    ></audio>
     <div class="container">
+        <div id="duration">
+            <div id="slider">
+                    <span id="time">0:00</span>
+            </div>
+        </div>
+        <div class="play-control" >
+                <img src="play.png" class="play" alt="" onclick="playpause()">
+                <img src="stop.png" class="stop" 
+                style="display:none"
+                onclick="playpause()">
+        </div>
+        <div class="Top" onclick="backtop()" style="display:none;">
+            <img src="top.png" alt="回到顶部">
+        </div>
         <div class="head">
             <div class="avatar">
                 <img src="a.png" alt="头像" title="头像">
@@ -27,8 +48,7 @@
                     style="width:0px;opacity:0;"
                     autofocus>
                 </li>
-            </ul>
-                                    
+            </ul>                      
         </div>
         <div class="body">
             <div class="item">
@@ -63,24 +83,82 @@
             </div>
         </div>
         <div class="foot">
-            <script>
-                var searchBtn = document.getElementById('searchBtn');
-                var searchInput = document.getElementById('searchInput');
-
-                function aclick(){
-                    searchBtn.style.display = 'none';
-                    searchInput.style.opacity = '1';
-                    searchInput.style.width = '75px';
-                    searchInput.focus()
-                }
-                function InputBlur(){
-                    searchBtn.style.display = 'inline-block';
-                    searchInput.style.opacity = '0';
-                    searchInput.style.width = '0px';
-                }
-            </script>
-
+            <div class="base">
+                <h3>落草之舞</h3>
+                <p>临渊羡鱼，不如退而结网</p>
+                <p class="link">
+                    @&nbsp;<!--不会打那个圈c,就打的圈a -->
+                    <a href="">落草之舞</a>
+                    &nbsp;/&nbsp;Power by
+                    <a href="">LOFTER</a>
+                </p>
+            </div>    
         </div>
     </div>
+    <script>
+            var searchBtn = document.getElementById('searchBtn');
+            var searchInput = document.getElementById('searchInput');
+            
+            function aclick(){
+                searchBtn.style.display = 'none';
+                searchInput.style.opacity = '1';
+                searchInput.style.width = '75px';
+                searchInput.focus()
+            }
+            function InputBlur(){
+                searchBtn.style.display = 'inline-block';
+                searchInput.style.opacity = '0';
+                searchInput.style.width = '0px';
+            }
+  
+            var kekon = document.getElementById('kekon');//音乐
+            kekon.volume = 0.125;//设置音量为 12.5
+            var duration = document.getElementById('duration');
+            var slider = document.getElementById('slider');
+            kekon.addEventListener('timeupdate',function(){
+                slider.style.width = (kekon.currentTime/kekon.duration)*100+'%';
+                var minute = Math.floor(kekon.currentTime/60);
+                var seconds = parseInt((kekon.currentTime%60).toFixed(0));
+                document.getElementById('time').innerHTML  = minute+':'+(seconds>10?seconds:'0'+seconds)
+            })
+            slider.addEventListener('click',function(){
+                playpause()
+            });
+
+            /**
+            * playpause 播放/暂停音乐
+            */
+            function playpause(){
+                if(kekon.paused){
+                    kekon.play();
+                    document.querySelector('.play').style.display = 'none';
+                    document.querySelector('.stop').style.display = 'block';
+                }else{
+                    kekon.pause();
+                    document.querySelector('.stop').style.display = 'none';
+                    document.querySelector('.play').style.display = 'block';
+                }
+            }
+            /**
+            *
+            *回到顶部
+            */
+            window.addEventListener('scroll',function(){
+                if( document.scrollingElement.scrollTop<500){
+                    document.querySelector('.Top').style.display = 'none'//距离顶部距离小于500不显示
+                }else{
+                    document.querySelector('.Top').style.display = 'block'
+                }
+            });
+            function backtop(){
+               var Timer  = setInterval(function(){
+                    if( document.scrollingElement.scrollTop<20){
+                        clearInterval(Timer)
+                    };
+                    document.scrollingElement.scrollTop =  document.scrollingElement.scrollTop- document.scrollingElement.scrollTop/4;
+               },20)
+            }
+        </script>
+
 </body>
 </html>
