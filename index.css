@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 1050px;
+}
+div{
+    box-sizing: border-box;
+    /* box-sizing  宽高 从哪里开始计算 content-box  */
+}
+a{
+    text-decoration: none;
+    color: black;    
+}
+.container{
+    margin: 12px;
+    border: 2px solid black;
+}
+.head{
+    padding-top:34px; 
+}
+.avatar{
+    text-align: center;
+}
+.avatar img{
+    width: 122px;
+    height: 122px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+.head h1 {
+    text-align: center;
+    height: 95px;
+    line-height: 95px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.head h1 a {
+    color: black;
+    font-weight: normal;
+}
+.nav{
+    width: 688px;
+    margin: 0px auto 70px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 12px 0;
+}
+.nav li{
+    display: inline-block;
+    /* list-style:none; */
+    margin: 6px 10px;
+    font-size:13px;
+}
+.nav li a {
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 0.5s all;
+    border-bottom: 1px solid white;
+}
+.nav li a:hover{
+    border-bottom: 1px solid black;
+}
+#searchInput{
+    line-height: 18px;
+    font-size: 13px;
+    outline: none;
+    padding: 2px 5px;
+    border: 1px solid #000;
+    transition:0.3s;
+    cursor:text;
+}
+.search{
+    text-decoration: none;
+}
+.search1{
+    width: 70px;
+    line-height: 18px;
+    font-size: 13px;
+}
+.item{
+    position: relative;
+    width: 688px;
+    margin: 0 auto;
+    padding: 50px 0 150px;
+}
+.item-img{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.item-img img{
+    width: 100%;
+    display: block
+}
+.item-img a.jiao{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-color: #fff;
+    bottom: -25px;
+    right: -25px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+/* .item-img a.jiao:hover{
+    background-color: red;
+    transform: scale(2) rotate(45deg);
+} */
+.item-img:hover a.jiao{
+    background-color: rgba(0,0,0,0.5)
+}
+.item-info{
+    padding-left:118px;
+}
+.item-info .content{
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+.item-info .time{
+    position: absolute;
+    top:50px;
+    font-size: 12px;
+    right: -150px;
+    margin: 0;
+    transform: rotate(90deg);
+    transform-origin:0 0 ;
+    border-bottom: 1px solid white; 
+    transition: 0.3s;
+}
+.item-info .time:hover{
+    border-bottom: 1px solid black; 
+}

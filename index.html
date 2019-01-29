@@ -1,1 +1,86 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>年货活动</title><link href="/static/css/main.e02e3f92.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script type="text/javascript" src="/static/js/main.d843576c.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lesson-7</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <div class="avatar">
+                <img src="a.png" alt="头像" title="头像">
+            </div>
+            <h1><a href="/">落草之舞</a></h1>
+            <ul class="nav">
+                <li><a href="">文字</a></li>
+                <li><a href="">摄影</a></li>
+                <li><a href="">音乐</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">about me</a></li>
+                <li class="search">
+                    <a class="" id="searchBtn" href="javascript:aclick();">搜索</a>
+                    <input class="search1" id="searchInput" type="text" 
+                    onblur="InputBlur()"
+                    style="width:0px;opacity:0;"
+                    autofocus>
+                </li>
+            </ul>
+                                    
+        </div>
+        <div class="body">
+            <div class="item">
+                <div class="item-img">
+                    <img src="http://imglf5.nosdn0.126.net/img/M1dBKzVkMXR5NDJhRmtSaUplYkV1YTBybFBwYWh0OThQS2QzdTl3b1lHemgzNkNEWkVBY3B3PT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg" alt="">
+                    <a class="jiao"></a>
+                </div>
+                <div class="item-info">
+                    <p class="content">头像</p>
+                    <a href="" class="time">2018/10/20</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="http://imglf3.nosdn0.126.net/img/RGw5T2dBVWlCNHd1NHNUWGFSVStsZmF5dUhMbmhEaWQ0UFZxdnNwZVJIcVh6VDRhcG5ObHR3PT0.jpg?imageView&thumbnail=2000y2666&type=jpg&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2&text=wqkg5byg54Gv5rSB5b2pwrdGb1BvVG8gLyBsYW1iZGFmb3RvLmxvZnRlci5jb20=&font=bXN5aA==&gravity=southwest&dissolve=30&fontsize=680&dx=32&dy=36&stripmeta=0" alt="">
+                    <a class="jiao"></a>
+                </div>
+                <div class="item-info">
+                    <p class="content">头像</p>
+                    <a href="" class="time">2018/10/20</a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-img">
+                    <img src="http://imglf3.nosdn0.126.net/img/MnBTYnlKQnRnKzVSTGlxTVMycE5ST0NBMlh0Qy9pcGNMTEFiM2hlQ2N1cHU1cFFXRytReG1nPT0.jpg?imageView&thumbnail=2000y2584&type=jpg&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2&text=wqkg54uQ54u454uQ54u46bG8IC8gZm94ZmlzaC5sb2Z0ZXIuY29t&font=bXN5aA==&gravity=southwest&dissolve=30&fontsize=680&dx=32&dy=36&stripmeta=0" alt="">
+                    <a class="jiao"></a>
+                </div>
+                <div class="item-info">
+                    <p class="content">头像</p>
+                    <a href="" class="time">2018/10/20</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <script>
+                var searchBtn = document.getElementById('searchBtn');
+                var searchInput = document.getElementById('searchInput');
+
+                function aclick(){
+                    searchBtn.style.display = 'none';
+                    searchInput.style.opacity = '1';
+                    searchInput.style.width = '75px';
+                    searchInput.focus()
+                }
+                function InputBlur(){
+                    searchBtn.style.display = 'inline-block';
+                    searchInput.style.opacity = '0';
+                    searchInput.style.width = '0px';
+                }
+            </script>
+
+        </div>
+    </div>
+</body>
+</html>
