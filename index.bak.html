@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>梦想要有</title>
+    <script src="./axios.min.js"></script>
+    <script src="./vue.js"></script>
+    <style type="text/css">
+        #app{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .loading{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .jump{
+            animation-name: jump;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes jump{
+            0%, 90% {
+                animation-timing-function: linear;
+                opacity: .5;
+            }
+            10% {
+                animation-timing-function: cubic-bezier(0,.4,.6,1);
+                -webkit-transform: translate(0%,5%) scaleY(1.1);
+                transform: translate(0%,5%) scaleY(1.1);
+                opacity: 1;
+            }
+            50% {
+                animation-timing-function: cubic-bezier(.4,0,1,.6);
+                -webkit-transform: translate(0%,-37%) scaleY(1.1);
+                transform: translate(0%,-37%) scaleY(1.1);
+                opacity: .8;
+            }
+            0%, 100% {
+                -webkit-transform: translate(0%,30%) scaleY(.5);
+                transform: translate(0%,30%) scaleY(.5);
+                opacity: .8;
+            }
+            90% {
+                -webkit-transform: translate(0%,5%) scaleY(1.1);
+                transform: translate(0%,5%) scaleY(1.1);
+                opacity: .5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <img class="loading jump" v-for='(i,k) in 1' :style="{'animation-delay':(k/12)+'s'}" src="./fish.png" alt="">
+    </div>
+</body>
+<script src="./random.js"></script>
+</html>
