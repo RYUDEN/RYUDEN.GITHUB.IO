@@ -1,0 +1,2 @@
+webpackJsonp([4],{hhDc:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var l={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"page-404"},[this._v("\n    404 not found\n")])},staticRenderFns:[]},s=t("VU/8")(null,l,!1,null,null,null);n.default=s.exports}});
+//# sourceMappingURL=4.23151eeeffff7b267408.js.map
