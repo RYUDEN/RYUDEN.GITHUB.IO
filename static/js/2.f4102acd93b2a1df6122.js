@@ -1,2 +1,0 @@
-webpackJsonp([2],{"4pxN":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"page-order-table"},[this._v("\n    ordertable\n")])},staticRenderFns:[]};var a=n("VU/8")({name:"order-table",metaInfo:{title:"提交订单-福分通内购"}},r,!1,function(e){n("YNQi")},"data-v-182dcb25",null);t.default=a.exports},YNQi:function(e,t){}});
-//# sourceMappingURL=2.f4102acd93b2a1df6122.js.map
